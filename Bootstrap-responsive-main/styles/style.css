@@ -1,0 +1,132 @@
+@font-face {
+  font-family: poppinsBold;
+  src: url("..//assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url("..//assets/fonts/Poppins-Regular.ttf");
+}
+:root {
+  --blueGradiant: #3b2a9f;
+  --purpleGradient: #5141aa;
+  --orange: #fa8305;
+  --box_bg: #1c140f;
+}
+
+body{
+  background-color: var(--blueGradiant);
+}
+
+.f-bold {
+  font-family: poppinsBold;
+}
+.f-regular {
+  font-family: poppinsRegular;
+}
+.bg-blueGradiant{
+  background-color: var(--blueGradiant);
+}
+.bg-orange{
+  background-color: var(--orange);
+}
+.bg-purpleGradient{
+  background-color: var(--purpleGradient);
+}
+.bg-box_bg{
+  background-color: var(--box_bg);
+}
+
+.pic-Main {
+  position: relative;
+  left: 60px;
+  width: 450px;
+}
+.pic-MiniMain1 {
+  position: absolute;
+  top: 80px;
+  left: 320px;
+  width: 70px;
+}
+.pic-MiniMain2 {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 100px;
+}
+.pic-MiniMain3 {
+  position: absolute;
+  top: 180px;
+  width: 90px;
+}
+.image_Cards {
+  width: 220px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.search_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 18px;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+.image_round {
+  border-radius: 5%;
+}
+
+.card_effect {
+  transition: 1s;
+}
+
+.card_effect:hover {
+  opacity: 50%;
+  scale: 110%;
+}
+
+.object_pop {
+  transition: 0.5s;
+}
+
+.object_pop:hover {
+  scale: 110%;
+}
+
+@keyframes live_object1 {
+  from {top: 0;}
+  to {top: 30px;}
+}
+@keyframes live_object2 {
+  from {left: 80px;}
+  to {left: 60px;}
+}
+@keyframes live_object3 {
+  from {top: 100;}
+  to {top: 140px;}
+}
+
+.live1 {
+  animation-name: live_object1;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.live2 {
+  animation-name: live_object2;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.live3 {
+  animation-name: live_object3;
+  animation-duration: .85s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
